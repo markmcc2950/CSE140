@@ -1,0 +1,26 @@
+Executing instruction at 00400000: 2408ffff
+addiu   $8, $0, -1
+New pc = 00400004
+Updated r08 to ffffffff
+No memory location was updated.
+Executing instruction at 00400004: 24090002
+addiu   $9, $0, 2
+New pc = 00400008
+Updated r09 to 00000002
+No memory location was updated.
+Executing instruction at 00400008: 01285023
+subu    $10, $9, $8
+New pc = 0040000c
+Updated r10 to 00000003
+No memory location was updated.
+Executing instruction at 0040000c: 01495824
+and     $11, $10, $9
+New pc = 00400010
+Updated r11 to 00000002
+No memory location was updated.
+Executing instruction at 00400010: 310c0001
+andi    $12, $8, 1
+New pc = 00400014
+Updated r12 to 00000001
+No memory location was updated.
+Executing instruction at 00400014: 00000000

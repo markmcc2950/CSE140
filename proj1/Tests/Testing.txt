@@ -1,0 +1,9 @@
+The sample we were given covered some general tests which helped determine how well our code worked for some instructions.  It allowed us to test the following: addiu, jal, addi, beq, addu, j, and jr.  In general, it allowed us to verify whether or not our J-Format instructions worked as intended, and whether or not our sign-extension was correct for the Unsigned operations.
+
+There were many instructions left to test, however. The first test we constructed was to check the instructions which seemed the most complicated: sll, srl, lui, lw, and sw.  The last three instructions were needed in the same test file so that memory-accesses could be performed as intended.
+
+We wanted to check for cases when memory access should work and when they should not.  The first test verified that lw and sw properly called and wrote to memory. The second test verified that our program would detect memory calls inside instruction memory and end properly.  Lastly, the third test verified that our program would terminate when the address given was not word-aligned. We considered this to be all cases we would need to check for.
+
+The sample test included a check for failure for I-format when $0 is the target register.  We then needed to include a similar check for R-Format when $0 is destination register.  This was included in the first test as the termination step.
+
+At this point, we mainly needed to test the unused instructions. Separate files were created to test the rest of the instructions in general cases for proper operation.  The fourth test file was for the verification or or, ori, and slt - it also tested for termination at end of file, without use of an unsupported instruction. The fifth test tested sub, and, and andi, also including a negative integer.
