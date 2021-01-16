@@ -1,9 +1,6 @@
 /*
 	CODE DONE ENTIRELY BY MARK MCCULLOUGH
 	ALL FUNCTIONS (binary, add, jump, shift) DONE BY MARK MCCULLOUGH
-	If anybody viewing this copies this, I had one of the more
-	unique solutions with having the system automatically output
-	binary. Just be warned, most people hard coded the binary sequences.
 */
 
 #include <stdio.h>
